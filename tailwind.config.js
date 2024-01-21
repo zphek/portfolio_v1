@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        oswald: ['Oswald', "sans-serif"],
+        bebas: ['"Bebas Neue"', "sans-serif"]
+        // Add more custom font families as needed
+      },
+    },
   },
   plugins: [],
 }

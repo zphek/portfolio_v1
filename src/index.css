@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+
+.down-arrow {
+    width: 25px;
+    height: 25px;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+    transform: rotate(-45deg);
+    animation: slideDownFade 2s ease-in-out infinite;
+}
+
+@keyframes slideDownFade {
+    0%, 100% {
+        transform: translateY(0) rotate(-45deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(20px) rotate(-45deg);
+        opacity: 0;
+    }
+}
