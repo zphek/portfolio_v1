@@ -6,6 +6,18 @@ html{
     scroll-behavior: smooth;
 }
 
+.company{
+    @apply bg-gradient-to-r from-blue-700 via-blue-800 to-gray-500 text-transparent bg-clip-text
+}
+
+.company::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    @apply rounded-full bg-white -translate-x-7 translate-y-[0.25rem]
+}
+
 .down-arrow {
     width: 25px;
     height: 25px;

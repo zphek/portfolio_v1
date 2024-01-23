@@ -5,13 +5,8 @@ import english from "../assets/english.png";
 import spanish from "../assets/spanish.png";
 
 const FloatMenu = () => {
-    return (<nav className="fixed flex w-screen justify-center items-center lg:top-10 z-30">
+    return (<nav className="fixed flex w-screen justify-center items-center lg:bottom-14 bottom-10 z-30">
         <ul className="flex flex-row px-5 py-2 justify-center items-center rounded-full gap-x-3 bg-black/30 backdrop-blur-xl">
-            
-            <button className="w-12 h-12">
-                <h2 className="text-2xl text-white font-bebas">BB<strong className="text-blue-500">.</strong></h2>
-            </button>
-
             <li className="flex items-center justify-center">
                 <a href="#home" className="p-2 rounded-full hover:bg-black/55 w-12 h-12 transition-[300ms] flex items-center justify-center">
                     <FontAwesomeIcon icon={faHouse} size="sm" color="white"/>

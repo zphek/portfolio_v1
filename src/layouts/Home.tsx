@@ -8,15 +8,19 @@ const Home = () => {
 
     return (
         <section className='flex flex-col justify-center items-center h-screen' id="home">
-        <a href="#projects" className="">
-            <div className="down-arrow rotate-[-45deg] absolute bottom-20">
+        <a href="#about">
+            <div className="down-arrow rotate-[-45deg] absolute lg:bottom-56 bottom-44">
 
             </div>
 
-            <div className="down-arrow rotate-[-45deg] absolute bottom-16">
+            <div className="down-arrow rotate-[-45deg] absolute lg:bottom-52 bottom-40">
 
             </div>
         </a>
+
+        <button className="w-12 h-12 absolute top-0 left-0 p-10">
+                <h2 className="text-5xl text-white font-bebas">BB<strong className="text-blue-500">.</strong></h2>
+        </button>
 
         <section className="flex lg:flex-row flex flex-col justify-center items-center z-10 w-2/4">
             <div className="lg:w-10 w-auto h-full mr-2 border-r-2 border-r-slate-300/20 flex lg:flex-col flex-row justify-around inline-block">
@@ -43,7 +47,7 @@ const Home = () => {
             </div>
             <div className="flex flex-col justify-center">
                     <h2 className="text-white font-extralight text-4xl">Hey <strong>I'm</strong></h2>
-                    <h2 className='font-extrabold text-9xl font-bebas text-[#607FEF]'>BERNARDO BÁEZ</h2>
+                    <h2 className='font-extrabold lg:text-9xl text-7xl font-bebas text-[#607FEF]'>BERNARDO BÁEZ</h2>
                     <h2 className="text-white text-4xl font-oswald">{text}<Cursor/></h2>
             </div>
         </section>

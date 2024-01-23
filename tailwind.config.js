@@ -8,8 +8,8 @@ export default {
     extend: {
       fontFamily: {
         oswald: ['Oswald', "sans-serif"],
-        bebas: ['"Bebas Neue"', "sans-serif"]
-        // Add more custom font families as needed
+        bebas: ['"Bebas Neue"', "sans-serif"],
+        robot: ["Roboto", "sans-serif"]
       },
     },
   },
