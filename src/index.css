@@ -24,8 +24,43 @@ html{
     border-left: 4px solid white;
     border-bottom: 4px solid white;
     transform: rotate(-45deg);
-    animation: slideDownFade 2s ease-in-out infinite;
+    animation: slideDownFade 2s linear infinite alternate;
 }
+
+.animated-button {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #0d47a1; /* Cambia el color del borde según tus preferencias */
+    border-radius: 20px;
+    background: linear-gradient(to left, #4285f4, #9b59b6); /* Utiliza tu degradado específico */
+    color: #ffffff; /* Cambia el color del texto según tus preferencias */
+    font-size: 16px; /* Ajusta el tamaño del texto según tus preferencias */
+    padding: 1px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .animated-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #4285f4, #9b59b6); /* Utiliza tu degradado específico */
+    z-index: -1;
+    animation: rotateBackground 8s linear infinite; /* Ajusta la velocidad de rotación según tus preferencias */
+  }
+  
+  @keyframes rotateBackground {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
 
 @keyframes slideDownFade {
     0%, 100% {

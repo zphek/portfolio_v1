@@ -1,9 +1,8 @@
 import FloatMenu from "../components/FloatMenu";
 import Footer from "../components/Footer";
 import AboutMe from "./AboutMe";
+import Contact from "./Contact";
 import Home from "./Home";
-import Projects from "./Projects";
-import Skills from "./Skills";
 import WorkExperience from "./WorkExperience";
 
 const Main = () => {
@@ -12,8 +11,7 @@ const Main = () => {
         <Home/>
         <AboutMe/>
         <WorkExperience/>
-        <Projects/>
-        <Skills/>
+        <Contact/>
         <Footer/>
         <FloatMenu/>
     </div>);
